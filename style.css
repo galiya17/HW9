@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding: 0 120px;
+    margin-bottom: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
+}
+
+body {
+    font-family: 'TT Hoves', sans-serif;  
+    color: #222222;                      
+    
+}
+
+h2 {
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    }
+
+p {
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+    
+}
+
+.income h2 {
+    max-width: calc(328px + (729 - 328) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.statistics {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.statistics p {
+    width: calc(328px + (876 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(150px + (152 - 150) * ((100vw - 375px) / (1280 - 375)));
+}
+
+screenshot {
+    margin-left: calc(23px + (95 - 23) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.screenshot img{
+    width: calc(328px + (1065 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(96px + (310 - 96) * ((100vw - 375px) / (1280 - 375)));
+
+}
+
+.Diploma {
+    display:grid;
+    grid-template-columns: 570px 578px;
+    grid-template-areas: 
+        "image title"
+        "image text";
+    gap: 20px;
+    border: 5px solid red;
+    padding: calc(13px + (20 - 13) * ((100vw - 375px) / (1280 - 375))) calc(23.5px + (121 - 23.5) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.gridElem1 {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridElem1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 500px;
+}
+
+.gridElem2 {
+    grid-area: title;
+}
+
+.gridElem2 h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.gridElem3 {
+    grid-area: text;
+    width: calc(328px + (514 - 375) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(75px + (114 - 75) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.gridElem3 p {
+    width: calc(328px + (514 - 375) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(75px + (114 - 75) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.gridElem1, .gridElem2, .gridElem3 {
+    border: 5px solid blue;
+}
+
+@media (max-width: 768px) {
+    .Diploma {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title" 
+        "image"
+        "text";
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    .gridElem1 img {
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:  calc(20px + (0 - 20) * ((100vw - 375px) / (1280 - 375))); 
+    border: 5px solid red;
+    margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.photo, .text {
+    border: 5px solid blue;
+}
+
+.photo img {
+    max-width: calc(406px + (579 - 406) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(248px + (354 - 248) * ((100vw - 375px) / (1280 - 375)));
+    top: 98px;
+    left:61px;
+}
+
+.text {
+    max-width: calc(328px + (520 - 328) * ((100vw - 375px) / (1280 - 375)));
+    gap: calc(20px + (25 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.text p {
+    font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: calc(25.2px + (29.4 - 25.2) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.frameBox {
+    border: 2px solid #000000;
+    padding: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375))) 
+    calc(20px + (52 - 20) * ((100vw - 375px) / (1280 - 375)))
+    calc(23px + (35 - 23) * ((100vw - 375px) / (1280 - 375)));
+    position: relative;
+}
+
+.frameBox h2 {
+    margin:0;
+}
+
+.lessons {
+    margin-top: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(23px + (34 - 23) * ((100vw - 375px) / (1280 - 375)));
+    list-style-type: none;
+}
+
+#corner {
+    width: calc(40px + (140 - 40) * ((100vw - 375px) / (1280 - 375)));
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.lessons li {
+    border-bottom: 1px solid #a1a1a1;
+    padding: 24px 0;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.lessons li:first-child {
+    padding-top: 0;
+}
+
+.frame button {
+    display: block;
+    margin:0 auto;
+}
+
+.mobile {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .mobile {
+        display: block !important;
+    }
+    .desktop {
+        display: none !important;
+    }
+    .frame button {
+        margin-top: 30px;
+    }
+    .lessons li:last-child {
+        border: 0;
+        padding-bottom: 0;
+    }
+}
