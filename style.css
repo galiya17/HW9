@@ -57,7 +57,6 @@ screenshot {
         "image title"
         "image text";
     gap: 20px;
-    border: 5px solid red;
     padding: calc(13px + (20 - 13) * ((100vw - 375px) / (1280 - 375))) calc(23.5px + (121 - 23.5) * ((100vw - 375px) / (1280 - 375)));
     margin-bottom: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
 }
@@ -96,10 +95,6 @@ screenshot {
     height: calc(75px + (114 - 75) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.gridElem1, .gridElem2, .gridElem3 {
-    border: 5px solid blue;
-}
-
 @media (max-width: 768px) {
     .Diploma {
         grid-template-columns: 1fr;
@@ -123,12 +118,7 @@ screenshot {
     flex-wrap: wrap;
     align-items: center;
     gap:  calc(20px + (0 - 20) * ((100vw - 375px) / (1280 - 375))); 
-    border: 5px solid red;
     margin-top: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
-}
-
-.photo, .text {
-    border: 5px solid blue;
 }
 
 .photo img {
